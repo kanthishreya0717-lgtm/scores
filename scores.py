@@ -1,0 +1,9 @@
+import sys
+
+scores = [float(score) for score in sys.argv[1:]]
+
+if not scores:
+    print("Enter scores after the program name.")
+else:
+    print("Sum:", sum(scores))
+    print("Average:", sum(scores) / len(scores))
